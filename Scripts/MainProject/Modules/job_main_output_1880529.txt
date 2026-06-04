@@ -1,0 +1,71 @@
+=== GPU info ===
+Mon Dec 15 10:20:20 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:88:00.0 Off |                   On |
+| N/A   33C    P0             92W /  400W |     832MiB /  81920MiB |     N/A      Default |
+|                                         |                        |              Enabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:8B:00.0 Off |                   On |
+| N/A   31C    P0             53W /  400W |      96MiB /  81920MiB |     N/A      Default |
+|                                         |                        |              Enabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:C8:00.0 Off |                   On |
+| N/A   26C    P0             49W /  400W |      96MiB /  81920MiB |     N/A      Default |
+|                                         |                        |              Enabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:CB:00.0 Off |                   On |
+| N/A   32C    P0             88W /  400W |     950MiB /  81920MiB |     N/A      Default |
+|                                         |                        |              Enabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| MIG devices:                                                                            |
++------------------+----------------------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |                     Memory-Usage |        Vol|        Shared         |
+|      ID  ID  Dev |                       BAR1-Usage | SM     Unc| CE ENC  DEC  OFA  JPG |
+|                  |                                  |        ECC|                       |
+|==================+==================================+===========+=======================|
+|  0    9   0   0  |              15MiB /  9728MiB    | 14      0 |  1   0    0    0    0 |
+|                  |                 0MiB / 16383MiB  |           |                       |
++------------------+----------------------------------+-----------+-----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    3    2    0    3308891      C   python                                        846MiB |
++-----------------------------------------------------------------------------------------+
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-b9e506c6-d97c-8a2f-3940-a4cc4e0ba5ba)
+  MIG 1g.10gb     Device  0: (UUID: MIG-d45355f1-8e96-58fd-b115-9a09d9d3fa93)
+GPU 1: NVIDIA A100-SXM4-80GB (UUID: GPU-5225b1de-d51e-ea91-8a4f-2987beba1da5)
+GPU 2: NVIDIA A100-SXM4-80GB (UUID: GPU-f597e56a-1dc7-4938-f421-ee171994d76c)
+GPU 3: NVIDIA A100-SXM4-80GB (UUID: GPU-ec20bcdd-74a4-de5a-f88f-e31910c3485c)
+================
+
+==============================
+Building consensus for group: prob
+==============================
+✓ Saved MEAN / WEIGHTED / MAX consensus for prob
+✓ Saved MEAN topology for prob
+✓ Saved WEIGHTED topology for prob
+✓ Saved MAX topology for prob
+✓ Saved FeatureGroupConsensus for prob
+
+==============================
+Building consensus for group: novelty
+==============================
+✓ Saved MEAN / WEIGHTED / MAX consensus for novelty
+✓ Saved MEAN topology for novelty
+✓ Saved WEIGHTED topology for novelty
+✓ Saved MAX topology for novelty
+✓ Saved FeatureGroupConsensus for novelty
+
+✓ MODULE 3 COMPLETE (Full Explainability Analysis)
+
